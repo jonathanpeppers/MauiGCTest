@@ -20,14 +20,17 @@
             <Label
                 FontSize="18"
                 HorizontalOptions="Center"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                SemanticProperties.HeadingLevel="Level2"
-                Text="Welcome to .NET Multi-platform App UI" />
+                Text="Force garbage collector to work:" />
 
             <Button
                 Clicked="GCCollect"
                 HorizontalOptions="Center"
                 Text="GC.Collect()" />
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Open page with plain control:" />
 
             <FlexLayout
                 x:Name="buttons"
@@ -40,6 +43,11 @@
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </FlexLayout>
+
+            <Label
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Open page with more complex control:" />
 
             <FlexLayout
                 x:Name="buttonsMoreComplex"
