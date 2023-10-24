@@ -40,6 +40,18 @@
                     </DataTemplate>
                 </BindableLayout.ItemTemplate>
             </FlexLayout>
+
+            <FlexLayout
+                x:Name="buttonsMoreComplex"
+                Wrap="Wrap">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button
+                            Command="{Binding Command}"
+                            Text="{Binding Description}" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
