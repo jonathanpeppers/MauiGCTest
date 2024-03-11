@@ -73,7 +73,18 @@ namespace GCTest
                 new()
                 {
                     Description = "BoxView",
-                    Command = new Command(() => OpenContainerPage(() => new BoxView()))
+                    Command = new Command(() => OpenContainerPage(() => new BoxView {
+                        GestureRecognizers = {
+                            new PanGestureRecognizer(),
+                            new DragGestureRecognizer(),
+                            new DropGestureRecognizer(),
+                            new PanGestureRecognizer(),
+                            new PinchGestureRecognizer(),
+                            new PointerGestureRecognizer(),
+                            new SwipeGestureRecognizer(),
+                            new TapGestureRecognizer(),
+                        }
+                    }))
                 },
                 new()
                 {
