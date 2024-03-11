@@ -9,8 +9,8 @@ public partial class ContainerPage : ContentPage
         InitializeComponent();
         Content = view;
         Title = view.GetType().Name;
-        Debug.WriteLine($"{Title} Page");
+        Console.WriteLine($"{Title} Page");
     }
 
-    ~ContainerPage() => Debug.WriteLine($"~{Title} Page");
+    ~ContainerPage() => Console.WriteLine($"~{Title} Page");
 }
